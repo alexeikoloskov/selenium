@@ -8,11 +8,11 @@ driver.get("https://msk.tele2.ru/")
 driver.implicitly_wait(10)
 font = driver.find_element_by_xpath('//span[@class="h4"]').get_property('font-weight')
 if font is None:
-    print('Текст стандартный :)', '\n')
+    print('\n', 'Текст стандартный :)', '\n')
 elif font <= 400:
-    print('Нормальный текст.', '\n')
+    print('\n', 'Нормальный текст.', '\n')
 elif font > 400:
-    print('"Жирный" текст!', '\n')
+    print('\n', '"Жирный" текст!', '\n')
 
 
 
